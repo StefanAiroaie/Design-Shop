@@ -17,28 +17,28 @@ html {
 
 
 /* ----------globale product einstelungen */
-.productname p {
+.productname {
+    grid-area: productname;
     color: #000;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 22px;
-    /* 146.667% */
+    line-height: 1.25rem;
 }
 
-.brand p {
+* .brand {
+    grid-area: brand;
     color: #848484;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 22px;
-    /* 146.667% */
+    line-height: 1.25rem;
 }
 
 .price {
+    grid-area: price;
     color: #000;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 22px;
-    /* 146.667% */
+    line-height: 1.25rem;
 }
 
 
@@ -69,7 +69,7 @@ html {
 
 /* main-grid */
 
-main .main-grid {
+.container-grid-7products {
     display: grid;
     width: 100vw;
     grid-template-columns: repeat(3, 1fr);
@@ -78,43 +78,71 @@ main .main-grid {
         "bigPicture bigPicture bigPicture"
         "smallPicture1 smallPicture2 smallPicture3"
         "smallPicture4 smallPicture5 smallPicture6";
-    padding: 3rem;
     gap: 1rem;
+    padding: 1rem;
 
 }
 
 .bigPicture {
     grid-area: bigPicture;
     width: 100%;
-    border: 2px solid rgb(0, 102, 255);
+    /* border: 2px solid rgb(0, 102, 255); */
+    margin-bottom: 1rem;
 }
 
 .smallPicture1 {
     grid-area: smallPicture1;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .smallPicture2 {
     grid-area: smallPicture2;
-    border: 2px solid rgb(130, 62, 62);
+    /* border: 2px solid rgb(130, 62, 62); */
 }
 
 .smallPicture3 {
     grid-area: smallPicture3;
-    border: 2px solid rgb(208, 49, 49);
+    /* border: 2px solid rgb(208, 49, 49); */
 }
 
 .smallPicture4 {
     grid-area: smallPicture4;
-    border: 2px solid rgb(0, 255, 89);
+    /* border: 2px solid rgb(0, 255, 89); */
 }
 
 .smallPicture5 {
     grid-area: smallPicture5;
-    border: 2px solid rgb(34, 255, 0);
+    /* border: 2px solid rgb(34, 255, 0); */
 }
 
 .smallPicture6 {
     grid-area: smallPicture6;
-    border: 2px solid rgb(255, 251, 0);
+    /* border: 2px solid rgb(255, 251, 0); */
+}
+
+
+.productInfo {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas:
+        "productname price"
+        "brand brand";
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+
+
+.container-grid-4products {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 300px 300px 300px; */
+    grid-template-areas:
+        "bigPicture bigPicture bigPicture"
+        "smallPicture1 smallPicture2 smallPicture3";
+    gap: 1rem;
+    padding: 1rem;
+
 }
