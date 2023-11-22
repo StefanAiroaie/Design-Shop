@@ -47,12 +47,12 @@ html {
 
 
 /* ---------start hover effect fur images */
-.container {
+body main .container {
     position: relative;
     width: 100%;
 }
 
-.image {
+body main .image {
     opacity: 1;
     display: block;
     width: 100%;
@@ -61,7 +61,7 @@ html {
     backface-visibility: hidden;
 }
 
-.container:hover .image {
+body main .container:hover .image {
     opacity: 0.3;
 }
 
@@ -70,6 +70,24 @@ html {
 
 
 /* ----------header und nav */
+
+
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+main {
+    margin-top: 30px;
+}
+
+
+
 
 header nav li {
     list-style: none;
@@ -93,28 +111,12 @@ header .logo {
     text-transform: uppercase;
 }
 
-/* .navbar {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 
-main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 3000px;
-} */
-
-
-
-
-
-header {
+.navbar {
+    background-color: #fff;
     /* ab hier grid */
     display: grid;
-    height: 6vh;
     width: 100vw;
     grid-template-columns: repeat(2 1fr);
     grid-template-areas: "logo nav";
@@ -129,9 +131,6 @@ nav {
 .logo {
     grid-area: logo;
 }
-
-
-
 
 
 /* main-grid */
