@@ -68,6 +68,72 @@ html {
 /* ---------end hover effect fur images */
 
 
+
+/* ----------header und nav */
+
+header nav li {
+    list-style: none;
+    display: inline;
+    padding-left: 3rem;
+
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #323A45;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header .logo {
+    color: #323A45;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* .navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 3000px;
+} */
+
+
+
+
+
+header {
+    /* ab hier grid */
+    display: grid;
+    height: 6vh;
+    width: 100vw;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: "logo nav";
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+
+
+
+
 /* main-grid */
 
 .container-grid-7products {
@@ -80,7 +146,7 @@ html {
         "smallPicture1 smallPicture2 smallPicture3"
         "smallPicture4 smallPicture5 smallPicture6";
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 
 }
 
@@ -144,7 +210,7 @@ html {
         "bigPicture bigPicture bigPicture"
         "smallPicture1 smallPicture2 smallPicture3";
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 
 }
 
@@ -165,7 +231,7 @@ footer {
         "copyright copyright copyright copyright"
     ;
     /* border: 2px solid red; */
-    padding: 1rem;
+    padding: 1rem 2rem;
     gap: 0.5rem;
 
 }
