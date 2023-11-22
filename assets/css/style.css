@@ -1,12 +1,47 @@
+@font-face {
+    font-family: Karla;
+    src: url(../fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --color-1: black:
+/* -----------gloabale einstelungen */
+
+html {
+    font-family: Karla;
 }
+
+
+/* ----------globale product einstelungen */
+.productname p {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    /* 146.667% */
+}
+
+.brand p {
+    color: #848484;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    /* 146.667% */
+}
+
+.price {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    /* 146.667% */
+}
+
+
 
 
 
@@ -30,3 +65,56 @@
 }
 
 /* ---------end hover effect fur images */
+
+
+/* main-grid */
+
+main .main-grid {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 300px 300px 300px; */
+    grid-template-areas:
+        "bigPicture bigPicture bigPicture"
+        "smallPicture1 smallPicture2 smallPicture3"
+        "smallPicture4 smallPicture5 smallPicture6";
+    padding: 3rem;
+    gap: 1rem;
+
+}
+
+.bigPicture {
+    grid-area: bigPicture;
+    width: 100%;
+    border: 2px solid rgb(0, 102, 255);
+}
+
+.smallPicture1 {
+    grid-area: smallPicture1;
+    border: 2px solid red;
+}
+
+.smallPicture2 {
+    grid-area: smallPicture2;
+    border: 2px solid rgb(130, 62, 62);
+}
+
+.smallPicture3 {
+    grid-area: smallPicture3;
+    border: 2px solid rgb(208, 49, 49);
+}
+
+.smallPicture4 {
+    grid-area: smallPicture4;
+    border: 2px solid rgb(0, 255, 89);
+}
+
+.smallPicture5 {
+    grid-area: smallPicture5;
+    border: 2px solid rgb(34, 255, 0);
+}
+
+.smallPicture6 {
+    grid-area: smallPicture6;
+    border: 2px solid rgb(255, 251, 0);
+}
