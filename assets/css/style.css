@@ -26,7 +26,7 @@ html {
     line-height: 1.25rem;
 }
 
-* .brand {
+.brand {
     grid-area: brand;
     color: #848484;
     font-size: 0.9rem;
@@ -69,9 +69,8 @@ body main .container:hover .image {
 
 
 
+
 /* ----------header und nav */
-
-
 header {
     background-color: #fff;
     position: fixed;
@@ -81,13 +80,10 @@ header {
     z-index: 1000;
 }
 
-
+/* main is here because of header to be fixed */
 main {
     margin-top: 30px;
 }
-
-
-
 
 header nav li {
     list-style: none;
@@ -111,8 +107,6 @@ header .logo {
     text-transform: uppercase;
 }
 
-
-
 .navbar {
     background-color: #fff;
     /* ab hier grid */
@@ -133,8 +127,7 @@ nav {
 }
 
 
-/* main-grid */
-
+/* gird section setting for display with 4 products */
 .container-grid-7products {
     display: grid;
     width: 100vw;
@@ -187,6 +180,8 @@ nav {
 }
 
 
+
+/* grid for the products infos */
 .productInfo {
     display: grid;
     grid-template-columns: repeat(2 1fr);
@@ -199,7 +194,7 @@ nav {
 
 
 
-
+/* gird section setting for display with 4 products */
 .container-grid-4products {
     display: grid;
     width: 100vw;
@@ -217,9 +212,6 @@ nav {
 
 
 /* ---------------footer */
-
-
-
 footer {
     margin-top: 2rem;
     width: 100vw;
