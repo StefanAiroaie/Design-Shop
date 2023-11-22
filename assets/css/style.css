@@ -13,6 +13,7 @@
 
 html {
     font-family: Karla;
+    color: #000;
 }
 
 
@@ -145,4 +146,88 @@ html {
     gap: 1rem;
     padding: 1rem;
 
+}
+
+
+
+
+/* ---------------footer */
+
+
+
+footer {
+    margin-top: 2rem;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-areas:
+        "footer1 footer2 footer3 footer4"
+        "copyright copyright copyright copyright"
+    ;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    gap: 0.5rem;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer1 {
+    grid-area: footer1;
+
+}
+
+.footer2 {
+    grid-area: footer2;
+
+}
+
+.footer3 {
+    grid-area: footer3;
+
+}
+
+.footer4 {
+    grid-area: footer4;
+
+}
+
+.copyright {
+    grid-area: copyright;
+    /* border: 1px solid green; */
+    color: #848484;
+    font-size: 0.66rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.catergoryName {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.categoryText {
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    width: 60%;
+
+}
+
+.categoryText a {
+    font-size: 0.6rem;
+    font-weight: 400;
+
+}
+
+.footer3 li:nth-child(2) {
+    font-style: italic;
 }
